@@ -1,0 +1,7 @@
+function GETLINK(input){
+  var sheet = SpreadsheetApp.getActiveSheet();
+  var range = sheet.getRange(input);
+  var value = range.getRichTextValue();
+  var url = value.getLinkUrl();
+  return url;
+}
